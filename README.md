@@ -23,7 +23,7 @@ A landing page contém:
 - **Rodapé com Contato:** Exibe informações de contato, incluindo e-mail e WhatsApp.
 
 ## Estrutura de Pastas
-│
+project-root
 ├── index.html # Arquivo principal HTML da página
 ├── style.css # Arquivo de estilos CSS
 └── /images # Pasta contendo as imagens utilizadas no site
