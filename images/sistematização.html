@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroRent JGB - Aluguel de Máquinas Agrícolas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        #produto img, #equipe .membro img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #equipe {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .membro {
+            text-align: center;
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        .membro h3 {
+            margin: 10px 0 5px 0;
+            font-size: 1.2em;
+        }
+
+        #contato form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #contato form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #contato form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contato form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        #contato form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AgroRent</h1>
+        <nav>
+            <ul>
+                <li><a href="#produto">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produto">
+            <h2>Nossos Serviços</h2>
+            <img src="/Users/gustavo/Desktop/trator1.jpeg" alt="Trator simples">
+            <img src="/Users/gustavo/Desktop/colheitadeira.jpeg" alt="Colheitadeira maz 3">
+            <p>A AgroRent oferece uma ampla gama de máquinas agrícolas para aluguel, ajudando você a otimizar suas operações agrícolas com equipamentos de alta qualidade e manutenção garantida.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma startup focada em fornecer soluções de aluguel de máquinas agrícolas, permitindo que produtores rurais de todos os tamanhos tenham acesso às melhores tecnologias do mercado sem a necessidade de altos investimentos.</p>
+        </section>
+
+        <section id="equipe">
+            <h2>Nossa Equipe</h2>
+            <div class="membro">
+                <img src="/Users/gustavo/Desktop/joao.jpeg" alt="João Silva">
+                <h3>João Silva</h3>
+                <p>CEO</p>
+            </div>
+            <div class="membro">
+                <img src="/Users/gustavo/Desktop/maria.jpeg" alt="Maria Santos">
+                <h3>Maria Santos</h3>
+                <p>Diretora de Operações</p>
+            </div>
+            <div class="membro">
+                <img src="/Users/gustavo/Desktop/carlos.jpeg" alt="Carlos Oliveira">
+                <h3>Carlos Oliveira</h3>
+                <p>Engenheiro Agrícola</p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Fique por Dentro!</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AgroRent. Todos os direitos reservados.<br>
+            Site produzido por Janio Gustavo</p>
+    </footer>
+</body>
+</html>
