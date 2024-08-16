@@ -24,9 +24,13 @@ A landing page contém:
 
 ## Estrutura de Pastas
 project-root
+
 ├── index.html # Arquivo principal HTML da página
+
 ├── style.css # Arquivo de estilos CSS
+
 └── /images # Pasta contendo as imagens utilizadas no site
+
 
 ## Instruções de Uso
 
